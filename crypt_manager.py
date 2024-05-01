@@ -6,8 +6,11 @@ import shutil
 import zipfile
 
 # Notes:
+# Run with: python .\crypt_manager.py
+# ---
 # - requires: pip install pyCryptodome
 # - requires: pip install gitpython
+# - make sure git is all setup first in a test repo elsewhere.
 
 desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
 key_path = f"{desktop_path}/Desktop Files/VP/obsidian_key.txt"
