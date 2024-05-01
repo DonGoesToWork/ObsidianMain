@@ -159,10 +159,6 @@ def main():
         delete_file(encrypted_zip_path)
         delete_file(zipped_vault_path)
     elif os.path.isdir(vault_path):  # create vault.enc
-        # backup our vault
-        delete_folder(backup_vault_path)
-        copy_folder(vault_path, backup_vault_path) 
-
         # encrypt it
         zip_folder(vault_path, zipped_vault_path)
         encrypt_zip(zipped_vault_path, encrypted_zip_path, key)
