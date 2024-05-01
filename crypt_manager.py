@@ -166,7 +166,7 @@ def main():
         delete_file(zipped_vault_path)
 
         # notify
-        print("Pulled and decrypted files.")
+        print("Fetched files -> pulled and decrypted vault.")
     elif os.path.isdir(vault_path):  # create vault.enc
         # encrypt it
         zip_folder(vault_path, zipped_vault_path)
@@ -178,7 +178,7 @@ def main():
         git_push()
 
         # notify
-        print("Encrypted and pushed files.")
+        print("Saved files -> encrypted and pushed files.")
 
 if __name__ == "__main__":
     main()
