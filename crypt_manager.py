@@ -8,7 +8,6 @@ import zipfile
 # Notes:
 # - requires: pip install pyCryptodome
 # - requires: pip install gitpython
-# - make sure .git folder is set to not read-only and not hidden
 
 desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
 key_path = f"{desktop_path}/Desktop Files/VP/obsidian_key.txt"
@@ -132,7 +131,7 @@ def git_pull():
         origin = repo.remote(name='origin')
         origin.pull()
     except Exception as e:
-        print(f'Error occured while pushing the code: {e}')    
+        print(f'Error occured while pushing the code: {e}')
 
 def git_push():
     try:
@@ -142,7 +141,14 @@ def git_push():
         origin = repo.remote(name='origin')
         origin.push()
     except Exception as e:
-        print(f'Error occured while pushing the code')    
+        print(f'Error occured while pushing: {e}')
+
+def git_add():
+    try:
+        repo = Repo(PATH_OF_GIT_REPO)
+        repo.git.add("-A")
+    except Exception as e:
+        print(f'Error occured while adding: {e}')
 
 #### GIT SPECIFIC SECTION END ####
 
@@ -158,6 +164,9 @@ def main():
         unzip_file(zipped_vault_path, vault_path)
         delete_file(encrypted_zip_path)
         delete_file(zipped_vault_path)
+
+        # add all files with git
+        print("Pulled and decrypted files.")
     elif os.path.isdir(vault_path):  # create vault.enc
         # encrypt it
         zip_folder(vault_path, zipped_vault_path)
@@ -167,6 +176,7 @@ def main():
 
         # push it
         git_push()
+        print("Encrypted and pushed files.")
 
 if __name__ == "__main__":
     main()
