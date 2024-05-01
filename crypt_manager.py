@@ -11,7 +11,8 @@ import zipfile
 # - make sure .git folder is set to not read-only and not hidden
 
 desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
-key_path = f"{desktop_path}/Desktop Files/obsidian_key.txt"
+key_path = f"{desktop_path}/Desktop Files/VP/obsidian_key.txt"
+backup_vault_path = f"{desktop_path}/Desktop Files/VP/Vault"
 vault_path = "Vault"
 zipped_vault_path = "vault.zip"
 encrypted_zip_path = "vault.enc"
@@ -149,6 +150,7 @@ def main():
         delete_file(zipped_vault_path)
     # create vault.enc
     elif os.path.isdir(vault_path):
+        copy_file(vault_path, backup_vault_path) # backup our vault
         zip_folder(vault_path, zipped_vault_path)
         encrypt_zip(zipped_vault_path, encrypted_zip_path, key)
         delete_folder(vault_path)
