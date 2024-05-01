@@ -149,20 +149,27 @@ def git_push():
 def main():
     key = load_key(key_path)
 
-    # create MyVault
-    if os.path.isfile(encrypted_zip_path):
-        git_pull()
+    if os.path.isfile(encrypted_zip_path): # create MyVault
+        # pull latest
+        git_pull() 
+
+        # decrypt it
         decrypt_zip(encrypted_zip_path, zipped_vault_path, key)
         unzip_file(zipped_vault_path, vault_path)
         delete_file(encrypted_zip_path)
         delete_file(zipped_vault_path)
-    # create vault.enc
-    elif os.path.isdir(vault_path):
-        copy_folder(vault_path, backup_vault_path) # backup our vault
+    elif os.path.isdir(vault_path):  # create vault.enc
+        # backup our vault
+        delete_folder(backup_vault_path)
+        copy_folder(vault_path, backup_vault_path) 
+
+        # encrypt it
         zip_folder(vault_path, zipped_vault_path)
         encrypt_zip(zipped_vault_path, encrypted_zip_path, key)
         delete_folder(vault_path)
         delete_file(zipped_vault_path)
+
+        # push it
         git_push()
 
 if __name__ == "__main__":
