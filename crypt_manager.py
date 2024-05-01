@@ -50,7 +50,7 @@ def copy_file(original_path, new_path):
     try:
         shutil.copy2(original_path, new_path)
     except Exception as e:
-        print(f"Error copying file from {original_path} to {new_path}.")
+        print(f"Error copying file from {original_path} to {new_path}: {e}")
 
 import shutil
 
@@ -58,7 +58,7 @@ def copy_folder(src, dst):
     try:
         shutil.copytree(src, dst)
     except Exception as e:
-        print(f"Error copying file from {src} to {dst}.")
+        print(f"Error copying file from {src} to {dst}: {e}")
 
 def encrypt_filename(filename, key):
     cipher = AES.new(key, AES.MODE_ECB)
@@ -131,8 +131,8 @@ def git_pull():
         repo = Repo(PATH_OF_GIT_REPO)
         origin = repo.remote(name='origin')
         origin.pull()
-    except:
-        print('Some error occured while pushing the code')    
+    except Exception as e:
+        print(f'Error occured while pushing the code: {e}')    
 
 def git_push():
     try:
@@ -141,8 +141,8 @@ def git_push():
         repo.index.commit(COMMIT_MESSAGE)
         origin = repo.remote(name='origin')
         origin.push()
-    except:
-        print('Some error occured while pushing the code')    
+    except Exception as e:
+        print(f'Error occured while pushing the code')    
 
 #### GIT SPECIFIC SECTION END ####
 
