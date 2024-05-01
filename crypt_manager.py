@@ -124,7 +124,7 @@ from git import Repo
 # requires: pip install gitpython
 
 PATH_OF_GIT_REPO = r'.git'  # make sure .git folder is properly configured
-COMMIT_MESSAGE = 'comment from python script'
+COMMIT_MESSAGE = 'Vault Backup'
 
 def git_pull():
     try:
