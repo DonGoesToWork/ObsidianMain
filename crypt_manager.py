@@ -166,6 +166,9 @@ def main():
         delete_file(zipped_vault_path)
 
         # add all files with git
+        git_add()
+
+        # notify
         print("Pulled and decrypted files.")
     elif os.path.isdir(vault_path):  # create vault.enc
         # encrypt it
@@ -176,6 +179,8 @@ def main():
 
         # push it
         git_push()
+
+        # notify
         print("Encrypted and pushed files.")
 
 if __name__ == "__main__":
