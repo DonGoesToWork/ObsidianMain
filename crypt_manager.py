@@ -52,6 +52,14 @@ def copy_file(original_path, new_path):
     except Exception as e:
         print(f"Error copying file from {original_path} to {new_path}.")
 
+import shutil
+
+def copy_folder(src, dst):
+    try:
+        shutil.copytree(src, dst)
+    except Exception as e:
+        print(f"Error copying file from {src} to {dst}.")
+
 def encrypt_filename(filename, key):
     cipher = AES.new(key, AES.MODE_ECB)
     encrypted_filename = cipher.encrypt(pad(filename.encode(), AES.block_size))
@@ -150,7 +158,7 @@ def main():
         delete_file(zipped_vault_path)
     # create vault.enc
     elif os.path.isdir(vault_path):
-        copy_file(vault_path, backup_vault_path) # backup our vault
+        copy_folder(vault_path, backup_vault_path) # backup our vault
         zip_folder(vault_path, zipped_vault_path)
         encrypt_zip(zipped_vault_path, encrypted_zip_path, key)
         delete_folder(vault_path)
