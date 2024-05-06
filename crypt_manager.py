@@ -1,8 +1,7 @@
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
-import os
-import shutil
+import os, shutil, stat
 import zipfile
 import hashlib
 import pwinput
@@ -17,6 +16,12 @@ vault_path = "Vault"
 zipped_vault_path = "vault.zip"
 encrypted_zip_path = "vault.enc"
 
+def on_rm_error( func, path, exc_info):
+    # path contains the path of the file that couldn't be removed
+    # let's just assume that it's read-only and unlink it.
+    os.chmod( path, stat.S_IWRITE )
+    os.unlink( path )
+
 def delete_folder(folder_path):
     if not os.path.exists(folder_path):
         print(f"The folder {folder_path} does not exist.")
@@ -26,7 +31,7 @@ def delete_folder(folder_path):
         return False
 
     try:
-        shutil.rmtree(folder_path)
+        shutil.rmtree(folder_path, onerror = on_rm_error)
         return True
     except Exception as e:
         print(f"An error occurred while deleting the folder: {e}")
@@ -235,8 +240,11 @@ def main():
         if not unzip_file(zipped_vault_path, vault_path):
             return
 
-        delete_file(encrypted_zip_path)
-        delete_file(zipped_vault_path)
+        if not delete_file(encrypted_zip_path):
+            return
+
+        if not delete_file(zipped_vault_path):
+            return
 
         # notify
         print("Fetched files -> pulled and decrypted vault.")
@@ -248,8 +256,11 @@ def main():
         if not encrypt_zip(zipped_vault_path, encrypted_zip_path, aes_key):
             return
 
-        delete_folder(vault_path)
-        delete_file(zipped_vault_path)
+        if not delete_folder(vault_path):
+            return
+
+        if not delete_file(zipped_vault_path):
+            return
 
         # push it
         git_push()

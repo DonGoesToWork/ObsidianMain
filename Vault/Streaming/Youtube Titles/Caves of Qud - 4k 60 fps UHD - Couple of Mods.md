@@ -1,1 +1,0 @@
-This is me playing Caves of Qud and just having fun with it trying to get a strong powerful character quickly like the old' days. Try #2. Wish me luck. No mods this time! (:

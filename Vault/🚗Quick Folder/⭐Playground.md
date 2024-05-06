@@ -1,6 +1,0 @@
-```dataview
-LIST
-```
-
-
-
