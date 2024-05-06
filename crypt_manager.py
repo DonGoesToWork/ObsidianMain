@@ -13,8 +13,6 @@ import pwinput
 # - requires: pip install pyCryptodome gitpython pwinput
 # - make sure git is all setup first in a test repo elsewhere.
 
-desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
-key_path = f"{desktop_path}/Desktop Files/VP/obsidian_key.txt"
 vault_path = "Vault"
 zipped_vault_path = "vault.zip"
 encrypted_zip_path = "vault.enc"
@@ -26,6 +24,7 @@ def delete_folder(folder_path):
     if not os.path.isdir(folder_path):
         print(f"{folder_path} is not a directory.")
         return False
+
     try:
         shutil.rmtree(folder_path)
         return True
@@ -40,17 +39,13 @@ def delete_file(file_path):
     if not os.path.isfile(file_path):
         print(f"{file_path} is not a file.")
         return False
+
     try:
         os.remove(file_path)
         return True
     except Exception as e:
         print(f"An error occurred while deleting the file: {e}")
         return False
-
-def load_key(key_path):
-    with open(key_path, 'rb') as key_file:
-        key = key_file.read()
-    return key
 
 def copy_file(original_path, new_path):
     try:
@@ -86,6 +81,7 @@ def encrypt_file_contents(file_path, key):
         encrypted_contents = cipher.encrypt(pad(file_contents, AES.block_size))
         with open(file_path, 'wb') as file:
             file.write(iv + encrypted_contents)
+        return True
     except Exception as e:
         print(f"Error encrypting file contents: {e}")
         return False
@@ -130,12 +126,15 @@ def decrypt_file_contents(file_path, key):
         with open(file_path, 'wb') as file:
             file.write(decrypted_contents)
 
+        return True
     except FileNotFoundError as fnf_error:
         print(f"Error: {fnf_error}")
         # Handle the error appropriately, e.g., retry, log, or exit
+        return False
 
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+        return False
 
 def decrypt_zip(enc_zip_name, dec_zip_name, key):
     if not copy_file(enc_zip_name, dec_zip_name):
@@ -143,6 +142,8 @@ def decrypt_zip(enc_zip_name, dec_zip_name, key):
 
     if not decrypt_file_contents(dec_zip_name, key):
         return False
+
+    return True
 
 def zip_folder(folder_path, zip_name):
     try:
@@ -207,13 +208,37 @@ def git_add():
 
 #### GIT SPECIFIC SECTION END ####
 
+import pwinput
+
+def get_password():
+    # Declare variables at the top of the function
+    password1 = None
+    password2 = None
+
+    while True:
+        # Ask for the password the first time
+        password1 = pwinput.pwinput(prompt='PW: ', mask='*')
+        if not password1:
+            raise ValueError("Password cannot be empty.")
+
+        # Ask for the password the second time
+        password2 = pwinput.pwinput(prompt='Confirm PW: ', mask='*')
+        if not password2:
+            raise ValueError("Confirmation password cannot be empty.")
+
+        # Compare the two passwords
+        if password1 == password2:
+            # Passwords match, proceed with the rest of your code
+            return password1
+        else:
+            # Passwords do not match, inform the user and ask again
+            print("Passwords do not match. Please try again.")
+
 def main():
     # Determine aes_key from user input
     try:
-        # Input validation
-        password = pwinput.pwinput(prompt='PW: ', mask='*')
-        if not password:
-            raise ValueError("Password cannot be empty.")
+        # Get password from user
+        password = get_password()
 
         # Generate salt
         salt = hashlib.sha256(password.encode()).digest()[:16]
@@ -229,13 +254,13 @@ def main():
 
     if os.path.isfile(encrypted_zip_path): # create Vault folder
         # pull latest
-        git_pull() 
+        git_pull()
 
         # decrypt it
-        if (decrypt_zip(encrypted_zip_path, zipped_vault_path, aes_key) == False):
+        if not decrypt_zip(encrypted_zip_path, zipped_vault_path, aes_key):
             return
 
-        if (unzip_file(zipped_vault_path, vault_path) == False):
+        if not unzip_file(zipped_vault_path, vault_path):
             return
 
         delete_file(encrypted_zip_path)
@@ -245,10 +270,10 @@ def main():
         print("Fetched files -> pulled and decrypted vault.")
     elif os.path.isdir(vault_path):  # create vault.enc
         # encrypt it
-        if (zip_folder(vault_path, zipped_vault_path) == False):
+        if not zip_folder(vault_path, zipped_vault_path):
             return
 
-        if (encrypt_zip(zipped_vault_path, encrypted_zip_path, aes_key) == False):
+        if not encrypt_zip(zipped_vault_path, encrypted_zip_path, aes_key):
             return
 
         delete_folder(vault_path)
