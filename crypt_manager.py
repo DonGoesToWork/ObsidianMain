@@ -1,9 +1,8 @@
+import os, shutil, stat, hashlib, zipfile
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
-import os, shutil, stat
-import zipfile
-import hashlib
+from git import Repo
 import pwinput
 
 # Notes:
@@ -11,6 +10,7 @@ import pwinput
 # ---
 # - requires: pip install pyCryptodome gitpython pwinput
 # - make sure git is all setup first in a test repo elsewhere.
+# - executable build with "pip install pyinstaller" > pyinstaller crypt_manager.py
 
 vault_path = "Vault"
 zipped_vault_path = "vault.zip"
@@ -147,9 +147,6 @@ def unzip_file(zip_path, extract_path):
 
 
 #### GIT SPECIFIC SECTION ####
-from git import Repo
-
-# requires: pip install gitpython
 
 PATH_OF_GIT_REPO = r'.git'  # make sure .git folder is properly configured
 COMMIT_MESSAGE = 'Vault Backup'
