@@ -1,0 +1,554 @@
+    1  build_kernel.sh -dev
+    2  build_kernel.sh -dev
+    3  adb shell
+    4  make_bootimg.sh
+    5  make_bootimg.sh
+    6  adb reboot download
+    7  adb shell
+    8  adb reboot download
+    9  make_bootimg.sh
+   10  adb shell
+   11  cd ~/kt
+   12  code .
+   13  make_bootimg.sh
+   14  adb reboot download
+   15  make_bootimg.sh
+   16  adb shell
+   17  adb reboot download
+   18  make_bootimg.sh
+   19  make_bootimg.sh
+   20  adb shell
+   21  make_bootimg.sh
+   22  adb reboot download
+   23  clear;
+   24  adb shell
+   25  adb reboot download
+   26  adb shell
+   27  cd $KERNEL_SRC
+   28  git status
+   29  git add deboot
+   30  git status
+   31  adb reboot download
+   32  adb shell
+   33  adb reboot download
+   34  adb shell
+   35  adb pull /sdcard/dmesg.txt C:\temp\dmesg.txt
+   36  adb pull /sdcard/dmesg.txt C:\temp\dmesg.txt
+   37  clear
+   38  adb pull /sdcard/dmesg.txt C:\temp\dmesg.txt
+   39  cd /mnt/c/
+   40  ls
+   41  cd temp
+   42  adb pull /sdcard/dmesg.txt /mnt/c/temp/dmesg.txt
+   43  cd /mnt/c/temp
+   44  adb pull /sdcard/dmesg.txt /mnt/c/temp/
+   45  cd /mnt/c/temp
+   46  adb pull /sdcard/dmesg.txt /mnt/c/temp
+   47  adb pull /sdcard/dmesg.txt
+   48  adb reboot download
+   49  adb shell
+   50  adb shell
+   51  adb shell
+   52  adb shell
+   53  `cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt `
+   54  cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt
+   55  adb reboot download
+   56  make_bootimg.sh
+   57  adb shell
+   58  adb reboot download
+   59  make_bootimg.sh
+   60  adb shell
+   61  adb pull /sdcard/test_*
+   62  adb pull /sdcard/
+   63  adb reboot download
+   64  adb reboot download
+   65  make_bootimg.sh
+   66  adb shell
+   67  adb reboot download
+   68  make_bootimg.sh
+   69  adb shell
+   70  adb shell
+   71  cd $KERNEL_SRC
+   72  git status
+   73  git add deboot
+   74  build_kernel.sh -dev
+   75  adb shell
+   76  cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt
+   77  adb reboot download
+   78  make_bootimg.sh
+   79  adb shell
+   80  adb pull /sdcard/
+   81  cd ~/temp
+   82  ls
+   83  adb push test_* /sdcard
+   84  cd ~/temp ; adb push test_* /sdcard
+   85  adb shell
+   86  adb reboot download
+   87  make_bootimg.sh
+   88  adb shell
+   89  adb reboot download
+   90  adb shell
+   91  adb shell
+   92  ls
+   93  cd ~/kt
+   94  ls
+   95  git status
+   96  adb reboot download
+   97  make_bootimg.sh
+   98  git status
+   99  git branch
+  100  git log
+  101  git branch
+  102  git checkout dar_universal_copy_new
+  103  git log
+  104  git branch
+  105  git checkout dar_universal_copy_newcpu
+  106  git branch
+  107  git branch
+  108  git checkout dar_universal_copy
+  109  git status
+  110  git pull
+  111  git branch
+  112  git branch -D dar_universal_copy_new
+  113  git branch -D dar_universal_copy_newcpu
+  114  git branch
+  115  git status
+  116  adb shell
+  117  adb reboot download
+  118  make_bootimg.sh
+  119  adb shell
+  120  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  121  cd ~/kt
+  122  git status
+  123  git show
+  124  git status
+  125  git diff
+  126  git status
+  127  git show
+  128  git diff
+  129  git status
+  130  git status
+  131  git add .
+  132  git status
+  133  git commit -m "impl. new uc feature."
+  134  git branch
+  135  git brv
+  136  git push
+  137  git merge origin dev
+  138  git status
+  139  git status
+  140  git branch
+  141  git status
+  142  git push
+  143  git status
+  144  git branch
+  145  git status
+  146  git merge origin dev
+  147  git status
+  148  git log
+  149  git push
+  150  git status
+  151  git checkout dev
+  152  git pull
+  153  git checkout dar_universal_copy
+  154  git status
+  155  git branch
+  156  git pull
+  157  git merge origin dev
+  158  git status
+  159  git branch
+  160  git status
+  161  git push
+  162  git status
+  163  git status
+  164  git add patch/
+  165  git status
+  166  git commit -m "Revert macro change."
+  167  git push
+  168  git status
+  169  git add patch/
+  170  git status
+  171  git commit -m "small var reference improvmeent."
+  172  git push
+  173  git status
+  174  apply_kernel_patch.py
+  175  adb reboot download
+  176  make_bootimg.sh
+  177  adb shell
+  178  git status
+  179  cd $KERNEL_SRC
+  180  git status
+  181  git add deboot
+  182  git status
+  183  build_kernel.sh -dev
+  184  git add deboot
+  185  git status
+  186  build_kernel.sh -dev
+  187  git add deboot
+  188  build_kernel.sh -dev
+  189  adb shell
+  190  adb shell
+  191  build_kernel.sh -dev
+  192  build_kernel.sh -dev
+  193  build_kernel.sh -dev
+  194  build_kernel.sh -dev
+  195  build_kernel.sh -dev
+  196  ls
+  197  git status
+  198  git add deboot
+  199  make_bootimg.sh
+  200  adb shell
+  201  git status
+  202  git add deboot
+  203  git status
+  204  git status
+  205  git diff deboot/deboot_parameters.h
+  206  git diff deboot/deboot_parameters.h --staged
+  207  git diff --staged deboot/deboot_parameters.h
+  208  git status
+  209  make_kernel_patch.py
+  210  git status
+  211  git status
+  212   git log
+  213   git reset --hard 246f70577f3faadce64d876761533921e6f074b7
+  214  git status
+  215  git status
+  216  git log
+  217  build_kernel.sh -dev
+  218  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  219  cd $KERNEL_SRC
+  220  git status
+  221  code .
+  222  build_kernel.sh -dev
+  223  adb shell
+  224  adb reboot download
+  225  make_bootimg.sh
+  226  adb shell
+  227  make_bootimg.sh
+  228  build_kernel.sh -dev
+  229  build_kernel.sh -dev
+  230  build_kernel.sh -dev
+  231  build_kernel.sh -dev
+  232  adb shell
+  233  adb reboot download
+  234  make_bootimg.sh
+  235  adb shell
+  236  adb shell
+  237  adb reboot download
+  238  adb reboot download
+  239  make_bootimg.sh
+  240  make_bootimg.sh
+  241  adb shell
+  242  cd ~/kt
+  243  code .
+  244  build_kernel.sh -dev
+  245  build_kernel.sh -dev
+  246  build_kernel.sh -dev
+  247  build_kernel.sh -dev
+  248  build_kernel.sh -dev
+  249  build_kernel.sh -dev
+  250  build_kernel.sh -dev
+  251  build_kernel.sh -dev
+  252  build_kernel.sh -dev
+  253  build_kernel.sh -dev
+  254  adb shell
+  255  build_kernel.sh -dev
+  256  build_kernel.sh -dev
+  257  build_kernel.sh -dev
+  258  adb shell
+  259  git status
+  260  cd $KERNEL_SRC
+  261  git status
+  262  git add deboot
+  263  git status
+  264  git status
+  265  git add deboot
+  266  git add deboot
+  267  git status
+  268  git branch
+  269  build_kernel.sh -dev
+  270  build_kernel.sh -dev
+  271  adb shell
+  272  build_kernel.sh -dev
+  273  build_kernel.sh -dev
+  274  adb shell
+  275  adb reboot download
+  276  make_bootimg.sh
+  277  dmesg -w
+  278  dmesg -w
+  279  adb shell
+  280  adb reboot download
+  281  make_bootimg.sh
+  282  make_bootimg.sh
+  283  git status
+  284  git add deboot
+  285  git status
+  286  git status
+  287  git add deboot
+  288  cd ~/kt
+  289  git pull
+  290  git status
+  291  apply_kernel_patch.py .py
+  292  git status
+  293  adb reboot download
+  294  adb reboot download
+  295  adb shell
+  296  adb shell
+  297  adb shell
+  298  ls
+  299  cd Desktop
+  300  ls
+  301  adb push test.enc /sdcard
+  302  ls
+  303  adb push test.enc /sdcard
+  304  sh w1
+  305  sh w2
+  306  adb shell
+  307  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  308  cd $KERNEL_SRC
+  309  git status
+  310  git log
+  311  git status
+  312  git status
+  313  build_kernel.sh -dev
+  314  code .
+  315  code .
+  316  code .
+  317  code .
+  318  git status
+  319  git status
+  320  make_bootimg.sh
+  321  git status
+  322  adb reboot download
+  323  git status
+  324  make_bootimg.sh
+  325  cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt
+  326  adb reboot download
+  327  make_bootimg.sh
+  328  make_bootimg.sh
+  329  adb shell
+  330  cd ~/kt
+  331  git status
+  332  git log
+  333  git status
+  334  adb reboot download
+  335  adb shell
+  336  git status
+  337  git status
+  338  git status
+  339  git branch
+  340  git log
+  341  adb shell
+  342  code .
+  343  git status
+  344  git add docs/
+  345  git status
+  346  git commit -m "docs addition to uc feature."
+  347  git push
+  348  git status
+  349  git add docs
+  350  git commit -m "docs improvment for uc feature."
+  351  git push
+  352  git status
+  353  cd $KERNEL_SRC
+  354  git log
+  355  git reset --hard 246f70577f3faadce64d876761533921e6f074b7
+  356  git status
+  357  apply_kernel_patch.py
+  358  git status
+  359  build_kernel.sh -dev
+  360  adb shell
+  361  git status
+  362  adb shell
+  363  cd /mnt/c/temp ; adb pull /sdcard
+  364  build_kernel.sh -dev
+  365  build_kernel.sh -dev
+  366  make_bootimg.sh
+  367  adb shell
+  368  cd $KERNEL_SRC
+  369  git status
+  370  git add deboot
+  371  git status
+  372  git status
+  373  git add deboot
+  374  git status
+  375  build_kernel.sh -dev
+  376  build_kernel.sh -dev
+  377  make_bootimg.sh
+  378  make_bootimg.sh
+  379  git status
+  380  git status
+  381  adb shell
+  382  git status
+  383  git add deboot
+  384  git status
+  385  adb shell
+  386  cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt
+  387  cd $KERNEL_SRC
+  388  git status
+  389  build_kernel.sh -dev
+  390  build_kernel.sh -dev
+  391  make_bootimg.sh
+  392  adb shell
+  393  adb shell
+  394  cd /mnt/c/temp ; adb pull /sdcard/dmesg.txt
+  395  cd $KERNEL_SRC
+  396  git status
+  397  git add deboot
+  398  git status
+  399  adb shell
+  400  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  401  cd ~/kt
+  402  git status
+  403  git pull
+  404  git status
+  405  code .
+  406  git status
+  407  git pull
+  408  adb reboot download
+  409  make_bootimg.sh
+  410  cd ~/temp ; adb push test_* /sdcard
+  411  cd sdcard
+  412  ls
+  413  db shell
+  414  cd sdcard
+  415  ls
+  416  adb shell
+  417  cd ~/temp ; adb push test_* /sdcard
+  418  adb shell
+  419  cd /mnt/c/temp ; adb pull /sdcard/
+  420  cd ~/temp ; adb push test_* /sdcard
+  421  cd ~/temp ; adb push test_* /sdcard
+  422  git status
+  423  build_kernel.sh -dev
+  424  make_bootimg.sh
+  425  adb reboot download
+  426  adb reboot download
+  427  cd ~/temp ; adb push test_* /sdcard
+  428  cd ~/temp ; adb push test_* /sdcard
+  429  cd ~/temp ; adb push test_* /sdcard
+  430  cd /mnt/c/temp ; adb pull /sdcard
+  431  cd ~/temp ; adb push test_* /sdcard
+  432  adb reboot download
+  433  git status
+  434  git status
+  435  cd /mnt/c/temp ; adb pull /sdcard
+  436  dmesg -w
+  437  adb reboot download
+  438  cd $KERNEL_SRC
+  439  git status
+  440  git add deboot
+  441  adb reboot download
+  442  make_bootimg.sh
+  443  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  444  cd $KERNEL_SRC
+  445  git status
+  446  git restore deboot/yaml_config.yaml
+  447  git status
+  448  git restore --staged deboot/yaml_config.yaml
+  449  git status
+  450  git restore deboot/yaml_config.yaml
+  451  git status
+  452  git clean -fdx
+  453  git status
+  454  make_kernel_patch.py
+  455  git status
+  456  ~/kt/dev/scripts/setup_env.py --device s21plus --rom gsi-11 --ktsrc ~/kt --rootdev ~/s21plus --buildtype eng
+  457  cd $KERNEL_SRC
+  458  git status
+  459  git brnach
+  460  git status
+  461  git diff
+  462  code .
+  463  git status
+  464  cd ~/
+  465  git status
+  466  cd $KERNEL_SRC
+  467  git status
+  468  cd ~/kt
+  469  git status
+  470  git add patch/
+  471  git status
+  472  git commit -m "removed 20 byte allocs. and made percent_watch a non-pointer"
+  473  git ls
+  474  git status
+  475  git diff HEAD~1 HEAD
+  476  git status
+  477  git add patch/
+  478  git status
+  479  git commit -m "removed unnecessary space."
+  480  git status
+  481  git push
+  482  git status
+  483  git log
+  484  git status
+  485  git add docs
+  486  git status
+  487  git add .
+  488  git status
+  489  git commit -m "small word change in uc documentatio0n."
+  490  git commit -m "small word change in uc documentation."
+  491  git status
+  492  git log
+  493  git reset --hard 4387b05bbb01fd8b3386d656ce4d180906cf9d0a
+  494  git status
+  495  git status
+  496  git add docs
+  497  git commit -m "small word change in uc documentation."
+  498  git status
+  499  git push
+  500  git status
+  501  adb shell
+  502  cd ~/
+  503  ls
+  504  cd temp
+  505  ls
+  506  adb install com.rockstargames.gtavc-1.12-free-www.apkshub.com.apk
+  507  adb shell
+  508  ls
+  509  unzip com.rockstargames.gtavc-1.12-obb-www.apkshub.com.zip
+  510  ls
+  511  adb push com.rockstargames.gtavc /data/app/
+  512  adb shell
+  513  cd ~/
+  514  echo ~~tkvbYue4GtgDVFTQGkpi0A==
+  515  echo ~~tkvbYue4GtgDVFTQGkpi0A== | base64 -d
+  516  echo ~~tkvbYue4GtgDVFTQGkpi0A== | base64 -D
+  517  echo tkvbYue4GtgDVFTQGkpi0A== | base64 -d
+  518  echo tkvbYue4GtgDVFTQGkpi0A== | base64 -d | xxd
+  519  echo tkvbYue4GtgDVFTQGkpi0A== | base64 -d | xxd -p
+  520  adb shell
+  521  ADB SHELL
+  522  adb shell
+  523  ls
+  524  cd temp
+  525  ls
+  526  adb pull /data/system/packages*
+  527  adb pull /data/system/packages.list
+  528  adb pull /data/system/packages.xml
+  529  adb pull /data/system/packages-warnings.xml
+  530  cd ~/
+  531  adb shell
+  532  adb uninstall magisk
+  533  adb list
+  534  adb help
+  535  adb shell pm
+  536  adb shell pm list packages
+  537  adb shell pm list packages | grep magisk
+  538  adb shell pm list packages | grep *magsisk*
+  539  adb shell
+  540  adb shell pm list packages
+  541  cd Desktop/
+  542  ls
+  543  adb shel
+  544  adb shell
+  545  ls
+  546  adb install Magisk-v25.2pak
+  547  adb install Magisk-v25.2.apk
+  548  adb shell
+  549  ls
+  550  adb install Magisk-v26.0.apk
+  551  adb shell
+  552  adb
+  553  cd Desktop
+  554  history

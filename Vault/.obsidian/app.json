@@ -1,0 +1,10 @@
+{
+  "attachmentFolderPath": "Resources",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "readableLineLength": true,
+  "spellcheck": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "New Notes Folder",
+  "promptDelete": false
+}

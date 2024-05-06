@@ -1,0 +1,21 @@
+General:
+- Make sure helper functions have 'static'.
+- Make sure not to use SAFE_LOG
+- Pointers should be initialized as NULL
+- Make sure to free all memory. (Don't free stack vars!)
+- Make sure all string variables are checked to be not null or empty. [*1]
+- Don't write strings. (Avoid strings)
+- Lowercase comments with no trailing periods.
+
+
+More specific:
+- Account for partial read/write possiblities.
+- Make sure to add labels, etc.
+
+
+[*1] -
+if (op->from_variable == NULL || op->write_file_path == NULL || strcmp(op->write_file_path, "") != 0) {
+	LOG(KERN_ERR, "variables are null, are unset or have bad values");
+	goto out;
+}
+

@@ -1,0 +1,71 @@
+
+Install Windows Terminal
+
+ Open a powershell or use the one from a previous section
+ cd to the kt software baseline folder
+ cd "Windows Store\Windows Terminal"
+ .\vc_redist.x64.exe
+ Follow the install wizard for the Visual C++ 2015-2022 Redistributable(x64)
+ Reboot if asked and then re-open a powershell to the "kt software baseline\Windows Store\Windows Terminal"
+ Rename-Item Microsoft.WindowsTerminal_Win10_1.12.10982.0_8wekyb3d8bbwe.Msixbundle Microsoft.WindowsTerminal_Win10_1.12.10982.0_8wekyb3d8bbwe.zip
+ Expand-Archive Microsoft.WindowsTerminal_Win10_1.12.10982.0_8wekyb3d8bbwe.zip
+ cd Microsoft.WindowsTerminal_Win10_1.12.10982.0_8wekyb3d8bbwe
+ Rename-Item CascadiaPackage_1.12.10982.0_x64.msix CascadiaPackage_1.12.10982.0_x64.zip
+ Expand-Archive CascadiaPackage_1.12.10982.0_x64.zip
+ Move-Item CascadiaPackage_1.12.10982.0_x64 $HOME\WindowsTerminal
+ cd $HOME\WindowsTerminal
+ .\WindowsTerminal.exe
+ Click the down arrow next to the + in the tab bar.
+ Click settings.
+ Change the Default profile to "Ubuntu-22.04"
+ Click Save in the lower right.
+ If you wish to disable the bell inside windows termina:
+ Click Defaults on the left pane
+ Click Advanced in the right pane
+ Scroll to the bottom and change the Bell notification style to none
+ Click Save in the lower right	
+ Close Windows Terminal
+ You should now be able to open Windows Terminal by typing WindowsTerminal.exe in the search bar and selecting it from the start menu.
+
+Install Visual Studio Code Extensions
+
+ Back in the powershell window
+ cd "vscode wsl linux server"
+ Copy-Item vscode-server-linux-x64.tar.gz \\wsl$\Ubuntu-22.04\home\kt
+ Open WindowsTerminal.exe
+ Unzip vscode-server-linux-x64.tar.gz by:
+ mkdir -p ~/.vscode-server/bin/commit:da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+ (The commit number must match visual studio code can be retreived from help->about)
+ cd ~/.vscode-server/bin/commit:da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+ tar -xvzf ~/vscode-server-linux-x64.tar.gz --strip 1
+(Another popular version we use is: commit:b5205cc8eb4fbaa726835538cd82372cc0222d43)
+ touch 0
+ rm ~/vscode-server-linux-x64.tar.gz
+ cd ~/bin
+ In the windows search bar (bottom left of the desktop), type Visual Studio Code
+ Right click Visual Studio Code and select "Open file location"
+ Right click the Visual Studio Code shortcut icon in the file browser and select "Properties"
+ Note the location of the Code.exe
+ ln -s <Code.exe from text above converted to wsl path ie. /mnt/c instead of C:\> code 
+ Ex. ln -s "/mnt/c/Program Files/Microsoft VS Code/Code.exe" code
+
+Install Visual Studio Code WSL Terminal setup
+
+ From a windows terminal in WSL
+ cd ~
+ code .
+ Click "I trust these authors"
+ In the menu at the top of Visual Studio Code, click Terminal->New Terminal
+ In the terminal pane that opens at the bottom, click on the down arrow next to the + (on the right side)
+ Click "Select Default Profile"
+ In the bar menu that opens at the top, select Ubuntu-22.04 (wsl)
+ Type exit in the Powershell terminal at the bottom of Visual Studio code
+ Click Terminal->New Terminal in order to verify that your wsl bash terminal opens
+
+Add WSL Ubuntu Filesystem as Windows Network Drive
+
+ Open the Windows file explorer
+ Navigate to \\wsl$\Ubuntu-22.04\
+ Open a new Windows file explorer window, and navigate to the 'This PC' view
+ Drag the wsl filepath from the first file explorer to the 'This PC' window. This should open a promt to mount the wsl path as a drive letter
+ Set the drive letter to 'W:' and click 'Finish'

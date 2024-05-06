@@ -1,0 +1,328 @@
+{
+  "main": {
+    "id": "c63fa59d8e887d8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "62b55765b0df1f7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0741e2a94b456ae9",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "eec773c3471a3599",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 1 - Partitioning Android Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89d3b2645abb830c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐C Tips and Tricks.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0f7f128165eed46c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/YAML Stage Guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "e78d940a821948b5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 3 - Multi-Queue, Expose Buffer Functionality Task.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "2ea64310fe5a2f23",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/⭐AI Coder.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "ffe7341423f69142",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/YAML Stage Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a8028250d7dd5b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 2 - Samsung S10 KT Development.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea22b6c359124283",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Partitioning Phones.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b52fe76b9d58ca09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Peer Review (PR) Comments TODO LIST - PR Checklist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4fe122ff0181c66e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ef8fcad86eff140",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed0e0bdbbb364250",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cbb8f8a3181270fe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f1e25326092bd445",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "7c14ba8483f81242",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "5d319f51e845d6a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "eea3ed1f6e0e62f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9d9cfbce2f87e6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1fbf6e449f3b2bfb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c0aafbb318e9df79",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2f4b049ba9599760",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-full-calendar:Open Full Calendar": false
+    }
+  },
+  "active": "0741e2a94b456ae9",
+  "lastOpenFiles": [
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Peer Review (PR) Comments TODO LIST - PR Checklist.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md",
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/YAML Stage Guide.md",
+    "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 1 - Partitioning Android Notes.md",
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md",
+    "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 2 - Samsung S10 KT Development.md",
+    "👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-28 Open.c Backup.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Work Email - Mailing List.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Partitioning Phones.md",
+    "Resources/test.enc",
+    "Resources/parted",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/KT Activation Tips.md",
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Advanced Write Design Document.md",
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Chaos Generator.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐C Tips and Tricks.md",
+    "👷🏽Work Notes, Information & Guides/1. Major Guides/Guide 3 - Multi-Queue, Expose Buffer Functionality Task.md",
+    "AI/⭐AI Coder.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Dmsetup.md",
+    "👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-24-2023 - deboot_partitioning.c.md",
+    "🌞Calandar/(Every F,R,W,T,M) Status, 2-23-2023).md",
+    "🚗Quick Folder/Temp 1.md",
+    "🚗Quick Folder/New YAML stages.md.md",
+    "🚗Quick Folder/Untitled 1.md",
+    "👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/GIT Reference.md",
+    "🚗Quick Folder/Untitled 2.md",
+    "🚗Quick Folder/Untitled.md",
+    "👷🏽Work Notes, Information & Guides/z Archived Code/Misc/Linux Kernel Hex Conversion.md",
+    "👷🏽Work Notes, Information & Guides/z Archived Code/Misc",
+    "🚗Quick Folder/Temp 3.md",
+    "Resources/Pasted image 20230227155053.png",
+    "Resources/Pasted image 20230228103044.png",
+    "Resources/Pasted image 20230227152320.png",
+    "👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task",
+    "👷🏽Work Notes, Information & Guides/Task Information",
+    "AI/Past Prompts",
+    "Resources/Pasted image 20230228103044 - Copy.png",
+    "Scripts/Powershell Scripts/password_generator.ps1",
+    "Scripts/Powershell Scripts",
+    "Scripts",
+    "Resources/Pasted image 20230222163414.png",
+    "Resources/Pasted image 20230222173250.png",
+    "Resources/Pasted image 20230223135242.png",
+    "Resources/Pasted image 20230223135259.png",
+    "👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task",
+    "Resources/Pasted image 20230227151556.png",
+    "📖Personal/Writing/Era of Gods Book 3/Story Canvas.canvas",
+    "4. Personal/Websites/Canvas Style.canvas",
+    "Resources/Pasted image 20230222173239.png"
+  ]
+}

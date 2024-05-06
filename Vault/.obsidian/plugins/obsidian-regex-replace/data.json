@@ -1,0 +1,10 @@
+{
+  "findText": "Baxton",
+  "replaceText": "Baxter",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": true,
+  "processTab": false,
+  "prefillFind": true
+}

@@ -1,0 +1,10 @@
+{
+  "accentColor": "#feca71",
+  "theme": "obsidian",
+  "baseFontSize": 13,
+  "enabledCssSnippets": [
+    "test",
+    "obsidian"
+  ],
+  "cssTheme": "Blue Topaz"
+}

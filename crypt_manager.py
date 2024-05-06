@@ -55,23 +55,6 @@ def copy_file(original_path, new_path):
         print(f"Error copying file from {original_path} to {new_path}: {e}")
         return False
 
-def copy_folder(src, dst):
-    try:
-        shutil.copytree(src, dst)
-        return True
-    except Exception as e:
-        print(f"Error copying file from {src} to {dst}: {e}")
-        return False
-
-def encrypt_filename(filename, key):
-    try:
-        cipher = AES.new(key, AES.MODE_ECB)
-        encrypted_filename = cipher.encrypt(pad(filename.encode(), AES.block_size))
-        return encrypted_filename.hex()
-    except Exception as e:
-        print(f"Error encrypting filename: {e}")
-        return None
-
 def encrypt_file_contents(file_path, key):
     try:
         iv = get_random_bytes(AES.block_size)
@@ -94,15 +77,6 @@ def encrypt_zip(zip_name, new_zip_name, key):
     except Exception as e:
         print(f"Error encrypting zip file: {e}")
         return False
-
-def decrypt_filename(encrypted_filename, key):
-    try:
-        cipher = AES.new(key, AES.MODE_ECB)
-        decrypted_filename = unpad(cipher.decrypt(bytes.fromhex(encrypted_filename)), AES.block_size).decode()
-        return decrypted_filename
-    except Exception as e:
-        print(f"Error decrypting filename: {e}")
-        return None
 
 def decrypt_file_contents(file_path, key):
     # Declare all variables at the top of the function
@@ -207,8 +181,6 @@ def git_add():
         return False
 
 #### GIT SPECIFIC SECTION END ####
-
-import pwinput
 
 def get_password():
     # Declare variables at the top of the function

@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "84a21fe69b53f4bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "b428761f13548c93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bbcfe1bdf12f1a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6d902089e6c57dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "632d3e34b0c41ffb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac3c0916a1b5630d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3f7054bf2e6d401c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a7e9738e1c3882e2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "acc142c2a79a8095",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7293e31ff1e5771",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1677249a0b8a77e2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d62ad3358a0d731a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5ec67e2c36abdad",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9becddc45273238f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "66b4318b577fa0a4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-full-calendar:Open Full Calendar": false
+    }
+  },
+  "active": "2bbcfe1bdf12f1a6",
+  "lastOpenFiles": [
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Advanced Write Design Document.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Chaos Generator.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Out of Partition Space General Guide.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/Peer Review (PR) Comments TODO LIST - PR Checklist.md",
+    "AI Prompts/ChatGPT Prompts/Article Summarizer.md",
+    "unmerged notes/uc_info.txt",
+    "unmerged notes/setup guide.txt",
+    "unmerged notes/PR Checklist.txt",
+    "unmerged notes/command_history_for_sideload_apps.txt",
+    "unmerged notes/file_enc_notes.txt.txt",
+    "unmerged notes",
+    "Work Vault To Merge/Work Emails.md",
+    "Work Vault To Merge/Email Drafts Information.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Quick Temp Backup/Untitled 2.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Quick Temp Backup/Untitled 0.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Quick Temp Backup/Untitled 1.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Misc/Linux Kernel Hex Conversion.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/Quick Paizo Multi-File Test.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-28-2023 - deboot_partitioning.c (ksys_open).md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/'check_space()' function for Checking Phone Memory in C (Android Studio).md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-28 Open.c Backup.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-28-2023 - deboot_partitioning.c (wipe, verify, write).md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task/2-24-2023 - deboot_partitioning.c.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task/YAML Stage Guide.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Quick Temp Backup",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/Misc",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/z Archived Code/3-1, Partition Task",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/Task Information/Out of Partition Task",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐Quick Reference.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/⭐C Tips and Tricks.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Work Email - Mailing List.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Using 'Bear' to Setup VS Code Intellisense.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Unlocking Bootloader.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Rooting Phones.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Rocky vs. Triad.md",
+    "Work Vault To Merge/👷🏽Work Notes, Information & Guides/1b. Major Guides (The Future)/Partitioning Phones.md",
+    "Work Vault To Merge/Resources/Pasted image 20230228103044.png",
+    "Work Vault To Merge/Resources/Pasted image 20230227155053.png",
+    "Work Vault To Merge/Resources/Pasted image 20230227152320.png",
+    "Work Vault/Resources/Pasted image 20230228103044.png",
+    "Work Vault/Resources/Pasted image 20230227155053.png",
+    "Work Vault/Resources/Pasted image 20230227152320.png",
+    "Work Stuff/Work Vault/Resources/Pasted image 20230228103044.png",
+    "Work Stuff/Work Vault/Resources/Pasted image 20230227155053.png",
+    "Work Stuff/Work Vault/Resources/Pasted image 20230227152320.png"
+  ]
+}
