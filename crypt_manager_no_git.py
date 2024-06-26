@@ -201,7 +201,7 @@ def main():
             return
 
         # notify
-        print("Fetched files -> pulled and decrypted vault.")
+        print("Decrypted vault.")
     elif os.path.isdir(vault_path):  # create vault.enc
         # encrypt it
         if not zip_folder(vault_path, zipped_vault_path):
@@ -217,7 +217,7 @@ def main():
             return
 
         # notify
-        print("Saved files -> encrypted and pushed files.")
+        print("Encrypted files.")
 
 if __name__ == "__main__":
     main()
